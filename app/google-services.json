@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "551431231683",
+    "firebase_url": "https://digital-district-map.firebaseio.com",
+    "project_id": "digital-district-map",
+    "storage_bucket": "digital-district-map.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551431231683:android:3fec5ffe8a45a6b8",
+        "android_client_info": {
+          "package_name": "com.ju.rotnocse.digitaldistrictmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551431231683-hrc6mtqlsi9gicmdn00pqhphg8pptd5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7fuFR8PYbxhdozZKIosuKi2i1BJosYJg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

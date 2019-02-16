@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/home">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home"
+            android:icon="@drawable/ic_home_black_24dp"/>
+    </group>
+    <group android:id="@+id/pic">
+        <item
+            android:id="@+id/nav_pic"
+            android:title="@string/pic"
+            android:icon="@drawable/ic_image_black_24dp"/>
+    </group>
+    <group android:id="@+id/video">
+        <item
+            android:id="@+id/nav_video"
+            android:title="@string/video"
+            android:icon="@drawable/ic_video_library_black_24dp"
+            />
+    </group>
+    <group android:id="@+id/contact">
+    <item
+        android:id="@+id/nav_contact"
+        android:title="@string/contact"
+        android:icon="@drawable/ic_perm_contact_calendar_black_24dp"/>
+</group>
+    <group android:id="@+id/rate">
+        <item
+            android:id="@+id/nav_rating"
+            android:title="@string/rate"
+            android:icon="@drawable/ic_brightness_high_black_24dp"/>
+    </group>
+</menu>
