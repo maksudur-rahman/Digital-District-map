@@ -7,7 +7,7 @@
     android:id="@+id/zoomLayout"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/district">
@@ -16,795 +16,807 @@
             android:id="@+id/panchgarTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_30sdp"
-            android:layout_marginTop="@dimen/_40sdp"
             android:onClick="toPanch"
             android:text="পঞ্চগড়"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="45dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/pabnaTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/sirajganjTv"
-            android:layout_toRightOf="@+id/kushtiaTv"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
             android:onClick="toPabna"
             android:text="পাবনা"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/kushtiaTv"
+            app:layout_constraintTop_toBottomOf="@+id/sirajganjTv" />
 
         <TextView
             android:id="@+id/satkhiraTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/jessoreTv"
-            android:layout_marginTop="@dimen/_35sdp"
-            android:layout_marginLeft="@dimen/_65sdp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="85dp"
             android:onClick="toSatkhira"
             android:text="সাতক্ষীরা"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jessoreTv" />
 
         <TextView
             android:id="@+id/jessoreTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/jhenaidahTv"
-            android:layout_marginTop="@dimen/_30sdp"
-            android:layout_marginLeft="@dimen/_65sdp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="90dp"
             android:onClick="toJessore"
             android:text="যশোর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jhenaidahTv" />
 
         <TextView
             android:id="@+id/jhenaidahTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/rajbariTv"
-            android:layout_toRightOf="@+id/chuadangaTv"
-            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginTop="10dp"
             android:onClick="toJhinaidaha"
             android:text="ঝিনাইদহ"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/chuadangaTv"
+            app:layout_constraintTop_toBottomOf="@+id/rajbariTv" />
 
         <TextView
             android:id="@+id/maguraTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/rajbariTv"
-            android:layout_toRightOf="@+id/jhenaidahTv"
-            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginTop="15dp"
             android:onClick="toMagura"
             android:text="মাগুরা"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/jhenaidahTv"
+            app:layout_constraintTop_toBottomOf="@+id/rajbariTv" />
 
         <TextView
             android:id="@+id/khulnaTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/narailTv"
-            android:layout_toRightOf="@+id/satkhiraTv"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginTop="65dp"
             android:onClick="toKhulna"
             android:text="খুলনা"
             android:textColor="@color/black"
-            android:textSize="8sp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/satkhiraTv"
+            app:layout_constraintTop_toBottomOf="@+id/narailTv" />
 
         <TextView
             android:id="@+id/bagerhatTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/gopalganjTv"
-            android:layout_toRightOf="@+id/khulnaTv"
-            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginTop="50dp"
             android:onClick="toBagerhut"
             android:text="বাগেরহাট"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/khulnaTv"
+            app:layout_constraintTop_toBottomOf="@+id/gopalganjTv" />
 
         <TextView
             android:id="@+id/coxbazarTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/bargunaTv"
-            android:layout_toRightOf="@+id/feniTv"
-            android:layout_marginTop="@dimen/_30sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="20dp"
             android:onClick="toCoxsbazar"
             android:text="কক্সবাজার"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/feniTv"
+            app:layout_constraintTop_toBottomOf="@+id/bargunaTv" />
 
         <TextView
             android:id="@+id/bandarbanTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/bargunaTv"
-            android:layout_toRightOf="@+id/coxbazarTv"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="35dp"
             android:onClick="toBandarban"
             android:text="বান্দরবান"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/coxbazarTv"
+            app:layout_constraintTop_toBottomOf="@+id/bargunaTv" />
 
         <TextView
             android:id="@+id/chittagongTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/jhalokatiTv"
-            android:layout_toRightOf="@+id/feniTv"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginLeft="20dp"
             android:onClick="toChittagong"
             android:text="চট্টগ্রাম"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/feniTv"
+            app:layout_constraintTop_toBottomOf="@+id/jhalokatiTv" />
 
         <TextView
             android:id="@+id/khagrachariTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/gopalganjTv"
-            android:layout_toRightOf="@+id/feniTv"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginLeft="15dp"
             android:onClick="toKahgrachari"
             android:text="খাগড়াছড়ি"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/feniTv"
+            app:layout_constraintTop_toBottomOf="@+id/gopalganjTv" />
 
         <TextView
             android:id="@+id/feniTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/shariatpurTv"
-            android:layout_toRightOf="@+id/noakhaliTv"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginTop="15dp"
             android:onClick="toFeni"
             android:text="ফেনী"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/noakhaliTv"
+            app:layout_constraintTop_toBottomOf="@+id/shariatpurTv" />
 
         <TextView
             android:id="@+id/noakhaliTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/chandpurTv"
-            android:layout_toRightOf="@+id/laxmipurTv"
-            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginTop="20dp"
             android:onClick="toNoakhali"
             android:text="নোয়াখালী"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/laxmipurTv"
+            app:layout_constraintTop_toBottomOf="@+id/chandpurTv" />
 
         <TextView
             android:id="@+id/bholaTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/barisalTv"
-            android:layout_toRightOf="@+id/jhalokatiTv"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
             android:onClick="toVola"
             android:text="ভোলা"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/jhalokatiTv"
+            app:layout_constraintTop_toBottomOf="@+id/barisalTv" />
 
         <TextView
             android:id="@+id/patuakhaliTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/bholaTv"
-            android:layout_toRightOf="@+id/bargunaTv"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginTop="10dp"
             android:onClick="toPatuakhali"
             android:text="পটুয়াখালী"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/bargunaTv"
+            app:layout_constraintTop_toBottomOf="@+id/bholaTv" />
 
         <TextView
             android:id="@+id/bargunaTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/chittagongTv"
-            android:layout_toRightOf="@+id/bagerhatTv"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
             android:onClick="toBarguna"
             android:text="বরগুনা"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/bagerhatTv"
+            app:layout_constraintTop_toBottomOf="@+id/chittagongTv" />
 
         <TextView
             android:id="@+id/thakurgaonTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/panchgarTv"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
             android:onClick="toThakurgaon"
             android:text="ঠাকুরগাঁও"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/panchgarTv" />
 
         <TextView
             android:id="@+id/nilphamariTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/panchgarTv"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_toRightOf="@+id/thakurgaonTv"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
             android:onClick="toNilphamari"
             android:text="নীলফামারী"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/thakurgaonTv"
+            app:layout_constraintTop_toBottomOf="@+id/panchgarTv" />
 
         <TextView
             android:id="@+id/lalmonirhatTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/panchgarTv"
-            android:layout_toRightOf="@+id/nilphamariTv"
             android:layout_marginTop="15dp"
             android:onClick="toLalmonirhut"
             android:text="লালমনিরহাট"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/nilphamariTv"
+            app:layout_constraintTop_toBottomOf="@+id/panchgarTv" />
 
         <TextView
             android:id="@+id/kurigramTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="toKurigram"
-            android:layout_below="@+id/lalmonirhatTv"
-            android:layout_toRightOf="@+id/rangpurTv"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
             android:text="কুড়িগ্রাম"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/rangpurTv"
+            app:layout_constraintTop_toBottomOf="@+id/lalmonirhatTv" />
 
         <TextView
             android:id="@+id/dinajpurTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/thakurgaonTv"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"
             android:onClick="toDinajpur"
             android:text="দিনাজপুর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thakurgaonTv" />
 
         <TextView
             android:id="@+id/rangpurTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/nilphamariTv"
-            android:layout_toRightOf="@+id/dinajpurTv"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
             android:onClick="toRangpur"
             android:text="রংপুর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/dinajpurTv"
+            app:layout_constraintTop_toBottomOf="@+id/nilphamariTv" />
 
         <TextView
             android:id="@+id/gaibandhaTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/rangpurTv"
-            android:layout_toRightOf="@+id/joypurhatTv"
-            android:layout_marginLeft="@dimen/_6sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
             android:onClick="toGaibandha"
             android:text="গাইবান্ধা"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/joypurhatTv"
+            app:layout_constraintTop_toBottomOf="@+id/rangpurTv" />
 
         <TextView
             android:id="@+id/joypurhatTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/dinajpurTv"
-            android:layout_marginTop="@dimen/_45sdp"
-            android:layout_marginLeft="@dimen/_60sdp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="80dp"
             android:onClick="toJaipurhut"
             android:text="জয়পুরহাট"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dinajpurTv" />
 
         <TextView
             android:id="@+id/naogoanTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/dinajpurTv"
-            android:layout_marginTop="@dimen/_60sdp"
-            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="45dp"
             android:onClick="toNaogaon"
             android:text="নওগাঁ"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dinajpurTv" />
 
         <TextView
             android:id="@+id/nawabganjTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/naogoanTv"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="20dp"
             android:onClick="toChapai"
             android:text="চাঁপাই নবাবগঞ্জ"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/naogoanTv" />
 
         <TextView
             android:id="@+id/rajshahiTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/nawabganjTv"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="45dp"
             android:onClick="toRajshahi"
             android:text="রাজশাহী"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nawabganjTv" />
 
         <TextView
             android:id="@+id/bograTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/joypurhatTv"
-            android:layout_toRightOf="@+id/naogoanTv"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="45dp"
             android:onClick="toBagura"
             android:text="বগুড়া"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/naogoanTv"
+            app:layout_constraintTop_toBottomOf="@+id/joypurhatTv" />
 
         <TextView
             android:id="@+id/jamalpurTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/gaibandhaTv"
-            android:layout_toRightOf="@+id/bograTv"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
             android:onClick="toJamalpur"
             android:text="জামালপুর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/bograTv"
+            app:layout_constraintTop_toBottomOf="@+id/gaibandhaTv" />
 
         <TextView
             android:id="@+id/sherpurTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/gaibandhaTv"
-            android:layout_toRightOf="@+id/jamalpurTv"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="20dp"
             android:onClick="toSherpur"
             android:text="শেরপুর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/jamalpurTv"
+            app:layout_constraintTop_toBottomOf="@+id/gaibandhaTv" />
 
         <TextView
             android:id="@+id/mymenshinghTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/jamalpurTv"
-            android:layout_toRightOf="@+id/bograTv"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="65dp"
             android:onClick="toMymenshahi"
             android:text="ময়মনসিংহ"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/bograTv"
+            app:layout_constraintTop_toBottomOf="@+id/jamalpurTv" />
 
         <TextView
             android:id="@+id/netrokonaTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/sherpurTv"
-            android:layout_toRightOf="@+id/mymenshinghTv"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="15dp"
             android:onClick="toNetrokona"
             android:text="নেত্রকোনা"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/mymenshinghTv"
+            app:layout_constraintTop_toBottomOf="@+id/sherpurTv" />
 
         <TextView
             android:id="@+id/sunamganjTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/sherpurTv"
-            android:layout_toRightOf="@+id/netrokonaTv"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
             android:onClick="toSunamganj"
             android:text="সুনামগঞ্জ"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/netrokonaTv"
+            app:layout_constraintTop_toBottomOf="@+id/sherpurTv" />
 
         <TextView
             android:id="@+id/sylhetTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/sherpurTv"
-            android:layout_toRightOf="@+id/sunamganjTv"
-            android:layout_marginTop="@dimen/_7sdp"
-            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
             android:onClick="toSylhet"
             android:text="সিলেট"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/sunamganjTv"
+            app:layout_constraintTop_toBottomOf="@+id/sherpurTv" />
 
         <TextView
             android:id="@+id/moulvibazarTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/sylhetTv"
-            android:layout_toRightOf="@+id/habiganjTv"
-            android:layout_marginTop="@dimen/_40sdp"
-            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
             android:onClick="toMoulovibazar"
             android:text="মৌলভীবাজার"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/habiganjTv"
+            app:layout_constraintTop_toBottomOf="@+id/sylhetTv" />
 
         <TextView
             android:id="@+id/habiganjTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/sunamganjTv"
-            android:layout_toRightOf="@+id/kishoreganjTv"
-            android:layout_marginTop="@dimen/_40sdp"
-            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
             android:onClick="toHabiganj"
             android:text="হবিগঞ্জ"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/kishoreganjTv"
+            app:layout_constraintTop_toBottomOf="@+id/sunamganjTv" />
 
         <TextView
             android:id="@+id/kishoreganjTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/netrokonaTv"
-            android:layout_marginTop="@dimen/_40sdp"
-            android:layout_toRightOf="@+id/mymenshinghTv"
-            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
             android:onClick="toKishorganj"
             android:text="কিশোরগঞ্জ"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/mymenshinghTv"
+            app:layout_constraintTop_toBottomOf="@+id/netrokonaTv" />
 
         <TextView
             android:id="@+id/tangailTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/jamalpurTv"
-            android:layout_toRightOf="@+id/sirajganjTv"
-            android:layout_marginTop="@dimen/_40sdp"
-            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
             android:onClick="toTangail"
             android:text="টাঙ্গাইল"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/sirajganjTv"
+            app:layout_constraintTop_toBottomOf="@+id/jamalpurTv" />
 
         <TextView
             android:id="@+id/gazipurTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/mymenshinghTv"
-            android:layout_toRightOf="@+id/tangailTv"
-            android:layout_marginTop="@dimen/_50sdp"
-            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="15dp"
             android:onClick="toGazipur"
             android:text="গাজীপুর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/tangailTv"
+            app:layout_constraintTop_toBottomOf="@+id/mymenshinghTv" />
 
         <TextView
             android:id="@+id/natoreTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/naogoanTv"
-            android:layout_toRightOf="@+id/rajshahiTv"
-            android:layout_marginTop="@dimen/_40sdp"
-            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
             android:onClick="toNator"
             android:text="নাটোর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/rajshahiTv"
+            app:layout_constraintTop_toBottomOf="@id/naogoanTv" />
 
         <TextView
             android:id="@+id/sirajganjTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/bograTv"
-            android:layout_toRightOf="@+id/natoreTv"
-            android:layout_marginTop="@dimen/_30sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
             android:onClick="toSirajganj"
             android:text="সিরাজগঞ্জ"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/natoreTv"
+            app:layout_constraintTop_toBottomOf="@+id/bograTv" />
 
         <TextView
             android:id="@+id/kushtiaTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/rajshahiTv"
-            android:layout_marginTop="@dimen/_40sdp"
-            android:layout_marginLeft="@dimen/_55sdp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="70dp"
             android:onClick="toKustia"
             android:text="কুষ্টিয়া"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rajshahiTv" />
 
         <TextView
             android:id="@+id/meherpurTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/kushtiaTv"
-            android:layout_marginLeft="@dimen/_40sdp"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
             android:onClick="toMeherpur"
             android:text="মেহেরপুর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kushtiaTv" />
 
         <TextView
             android:id="@+id/chuadangaTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/meherpurTv"
-            android:layout_marginTop="@dimen/_6sdp"
-            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="60dp"
             android:onClick="toChuadanga"
             android:text="চুয়াডাঙ্গা"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meherpurTv" />
 
         <TextView
             android:id="@+id/rajbariTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/pabnaTv"
-            android:layout_toRightOf="@+id/kushtiaTv"
-            android:layout_marginTop="@dimen/_25sdp"
-            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="25dp"
             android:onClick="toRajbari"
             android:text="রাজবাড়ী"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/kushtiaTv"
+            app:layout_constraintTop_toBottomOf="@+id/pabnaTv" />
 
         <TextView
             android:id="@+id/manikganjTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tangailTv"
-            android:layout_toRightOf="@+id/rajbariTv"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="75dp"
             android:onClick="toManikganj"
             android:text="মানিকগঞ্জ"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/rajbariTv"
+            app:layout_constraintTop_toBottomOf="@+id/tangailTv" />
 
         <TextView
             android:id="@+id/dhakaTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/pabnaTv"
-            android:layout_toRightOf="@+id/manikganjTv"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="15dp"
             android:onClick="toDhaka"
             android:text="ঢাকা"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/manikganjTv"
+            app:layout_constraintTop_toBottomOf="@+id/pabnaTv" />
 
         <TextView
             android:id="@+id/nganjTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/narshingdiTv"
-            android:layout_toRightOf="@+id/dhakaTv"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="20dp"
             android:onClick="toNarayanganj"
             android:text="নারায়ণগঞ্জ"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/dhakaTv"
+            app:layout_constraintTop_toBottomOf="@+id/narshingdiTv" />
 
         <TextView
             android:id="@+id/narshingdiTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/kishoreganjTv"
-            android:layout_toRightOf="@+id/gazipurTv"
-            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="5dp"
             android:onClick="toNarsingdi"
             android:text="নরসিংদী"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/gazipurTv"
+            app:layout_constraintTop_toBottomOf="@+id/kishoreganjTv" />
 
         <TextView
             android:id="@+id/bbariaTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/habiganjTv"
-            android:layout_toRightOf="@+id/narshingdiTv"
-            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginTop="50dp"
             android:onClick="toBbaria"
             android:text="ব্রাহ্মণবাড়িয়া"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/narshingdiTv"
+            app:layout_constraintTop_toBottomOf="@+id/habiganjTv" />
 
         <TextView
             android:id="@+id/comillaTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/nganjTv"
-            android:layout_toRightOf="@+id/munshiganjTv"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
             android:onClick="toComilla"
             android:text="কুমিল্লা"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/munshiganjTv"
+            app:layout_constraintTop_toBottomOf="@+id/nganjTv" />
 
         <TextView
             android:id="@+id/munshiganjTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/dhakaTv"
-            android:layout_toRightOf="@+id/faridpurTv"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="10dp"
             android:onClick="toMunshiganj"
             android:text="মুন্সীগঞ্জ"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/faridpurTv"
+            app:layout_constraintTop_toBottomOf="@+id/dhakaTv" />
 
         <TextView
             android:id="@+id/faridpurTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/rajbariTv"
-            android:layout_toRightOf="@+id/maguraTv"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
             android:onClick="toFaridpur"
             android:text="ফরিদপুর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/maguraTv"
+            app:layout_constraintTop_toBottomOf="@+id/rajbariTv" />
 
         <TextView
             android:id="@+id/chandpurTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/comillaTv"
-            android:layout_toRightOf="@+id/shariatpurTv"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="25dp"
             android:onClick="toChadpur"
             android:text="চাঁদপুর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/shariatpurTv"
+            app:layout_constraintTop_toBottomOf="@+id/comillaTv" />
 
         <TextView
             android:id="@+id/shariatpurTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/munshiganjTv"
-            android:layout_toRightOf="@+id/madaripurTv"
-            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginTop="25dp"
             android:onClick="toShariotpur"
             android:text="শরীয়তপুর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/madaripurTv"
+            app:layout_constraintTop_toBottomOf="@+id/munshiganjTv" />
 
         <TextView
             android:id="@+id/madaripurTv"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/munshiganjTv"
-            android:layout_toRightOf="@+id/narailTv"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
             android:onClick="toMadaripur"
             android:text="মাদারীপুর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/narailTv"
+            app:layout_constraintTop_toBottomOf="@+id/munshiganjTv" />
 
         <TextView
             android:id="@+id/gopalganjTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/faridpurTv"
-            android:layout_toRightOf="@+id/narailTv"
-            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginTop="35dp"
             android:onClick="toGopalganj"
             android:text="গোপালগঞ্জ"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/narailTv"
+            app:layout_constraintTop_toBottomOf="@+id/faridpurTv" />
 
         <TextView
             android:id="@+id/narailTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/maguraTv"
-            android:layout_toRightOf="@+id/jessoreTv"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
             android:onClick="toNarail"
             android:text="নড়াইল"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/jessoreTv"
+            app:layout_constraintTop_toBottomOf="@+id/maguraTv" />
 
         <TextView
             android:id="@+id/barisalTv"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/shariatpurTv"
-            android:layout_toRightOf="@+id/gopalganjTv"
-            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_height="20dp"
+            android:layout_marginTop="25dp"
             android:onClick="toBarisal"
             android:text="বরিশাল"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/gopalganjTv"
+            app:layout_constraintTop_toBottomOf="@+id/shariatpurTv" />
 
         <TextView
             android:id="@+id/perojpurTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/gopalganjTv"
-            android:layout_toRightOf="@+id/bagerhatTv"
-            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginTop="35dp"
             android:onClick="toPirojpur"
             android:text="পিরোজপুর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/bagerhatTv"
+            app:layout_constraintTop_toBottomOf="@+id/gopalganjTv" />
 
         <TextView
             android:id="@+id/jhalokatiTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/barisalTv"
-            android:layout_toRightOf="@+id/bagerhatTv"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginLeft="15dp"
             android:onClick="toJhalkathi"
             android:text="ঝালকাঠি"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/bagerhatTv"
+            app:layout_constraintTop_toBottomOf="@+id/perojpurTv"/>
 
         <TextView
             android:id="@+id/rangamatiTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/feniTv"
-            android:layout_toRightOf="@+id/khagrachariTv"
             android:onClick="toRangamati"
             android:text="রাঙ্গামাটি"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/khagrachariTv"
+            app:layout_constraintTop_toBottomOf="@+id/feniTv" />
 
         <TextView
             android:id="@+id/laxmipurTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/jessoreTv"
-            android:layout_toRightOf="@+id/barisalTv"
-            android:layout_marginTop="@dimen/_7sdp"
-            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
             android:onClick="toLuxipur"
             android:text="লক্ষ্মীপুর"
             android:textColor="@color/black"
-            android:textSize="@dimen/_7sdp" />
-    </RelativeLayout>
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/barisalTv"
+            app:layout_constraintTop_toBottomOf="@+id/jessoreTv" />
+    </android.support.constraint.ConstraintLayout>
 
 </com.ju.rotnocse.digitaldistrictmap.utils.ZoomLayout>
